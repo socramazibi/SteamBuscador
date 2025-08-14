@@ -2,4 +2,4 @@
 Steam buscador de juegos buenos.
 
 
-<img width="422" height="322" alt="imagen" src="https://github.com/user-attachments/assets/1dc16b07-da97-401c-95ec-1cb0486d8f15" />
+<img width="523" height="350" alt="imagen" src="https://github.com/user-attachments/assets/4d1f9510-a079-4865-85a2-9826aaa726f3" />
