@@ -1,11 +1,6 @@
-async function updateLastTime() {
-    const res = await fetch("/api/last_update");
-    const data = await res.json();
-    document.getElementById("lastUpdate").innerText = `Última actualización: ${data.last_updated}`;
-}
-
 async function loadGames(page=1) {
-    const search = document.getElementById("search").value;
+    const searchInput = document.getElementById("search").value.trim();
+    const search = searchInput.length > 0 ? searchInput : ""; // vacío = cualquier nombre
     const minScore = document.getElementById("minScore").value;
     const minReviews = document.getElementById("minReviews").value;
 
@@ -44,8 +39,10 @@ async function loadGames(page=1) {
         paginationDiv.appendChild(btn);
     }
 
+    // Actualizar última actualización
     updateLastTime();
 }
+
 
 document.getElementById("searchBtn").addEventListener("click", () => loadGames());
 window.onload = () => loadGames();
