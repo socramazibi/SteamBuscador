@@ -2,12 +2,4 @@
 Steam buscador de juegos buenos.
 
 
--steam-buscador/
--│
--├── app.py          # Backend Flask
--├── requirements.txt # Librerías necesarias
--├── static/
--│   ├── style.css
--│   └── script.js
--└── templates/
--    └── index.html
+<img width="422" height="322" alt="imagen" src="https://github.com/user-attachments/assets/1dc16b07-da97-401c-95ec-1cb0486d8f15" />
