@@ -3,14 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buscador Steam</title>
+<title>Buscador Steam Avanzado</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <h1>🎮 Buscador de Juegos Buenos - Steam</h1>
-<button id="searchBtn">Buscar Juegos</button>
+
+<div class="filters">
+    <input type="text" id="search" placeholder="Buscar por nombre">
+    <input type="number" id="minScore" value="80" min="0" max="100">% mín. positivas
+    <input type="number" id="minReviews" value="50" min="0"> mín. reseñas
+    <button id="searchBtn">Buscar</button>
+</div>
+
 <div id="results"></div>
+
+<div id="pagination"></div>
+
+<div id="lastUpdate" class="last-update"></div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
+
