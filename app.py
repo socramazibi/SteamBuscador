@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, jsonify
 import requests
 
@@ -43,4 +44,7 @@ def get_games():
     return jsonify(result)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Render asigna el puerto con variable de entorno PORT
+    port = int(os.environ.get("PORT", 5000))
+    # Debes bindear a 0.0.0.0, no localhost
+    app.run(host="0.0.0.0", port=port)
